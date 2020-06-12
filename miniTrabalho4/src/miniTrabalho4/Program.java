@@ -71,7 +71,7 @@ public class Program {
 				.map(t->t.getEmail()).sorted() // organiza uma lista apenas com os e-mails, de pessoas com salario > salary e organiza pro ordem alfabetica
 				
 				.collect(Collectors.toList());// cria a lista
-		System.out.println("Email of people whose salary is more than: " + salary);
+		System.out.println("Email of people whose salary is more than: " + String.format("%.2f", salary));
 		mailOrdenado.forEach(System.out::println);// mostra a lista
 		
 		List<Employee> nomes = list.stream()
@@ -94,7 +94,7 @@ public class Program {
 		
 		System.out.println("------------------------");
 		
-				System.out.println("Sum of salary of people whose name starts with 'M': " +soma);// imprime o resultado
+				System.out.println("Sum of salary of people whose name starts with 'M': " +String.format("%.2f", soma));// imprime o resultado
 		System.out.println("------------------------");			
 		//-------
 		} catch (IOException e) {
