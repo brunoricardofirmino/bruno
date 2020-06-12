@@ -45,13 +45,13 @@ public class Program {
 		double salary = sc.nextDouble();
 	//	-------
 		
-		System.out.println("------------------------");
+		//System.out.println("------------------------");
 		
-		System.out.println("mostrar toda a lista:");
+		//System.out.println("mostrar toda a lista:");
 		
-		list.forEach(System.out::println); // mostra toda a lista
+		//list.forEach(System.out::println); // mostra toda a lista
 		
-		System.out.println("------------------------");
+		//System.out.println("------------------------");
 		
 		//Nesta parte do programa complete o código em Programação funcional para mostrar a saída de programa solicitado.
 		
@@ -71,7 +71,7 @@ public class Program {
 				.map(t->t.getEmail()).sorted() // organiza uma lista apenas com os e-mails, de pessoas com salario > salary e organiza pro ordem alfabetica
 				
 				.collect(Collectors.toList());// cria a lista
-		System.out.println("mostra a lista de mails cujas pessoas recebem um valor superior ao introduzido, ordenado pro ordem alfabetica:");
+		System.out.println("Email of people whose salary is more than: " + salary);
 		mailOrdenado.forEach(System.out::println);// mostra a lista
 		
 		List<Employee> nomes = list.stream()
@@ -82,8 +82,8 @@ public class Program {
 		
 		System.out.println("------------------------");
 		
-		System.out.println("mostra a lista de funcionarios com nome começado por M e respectivo mail e ordenado:");
-		nomes.forEach(System.out::println);//imprime a lista
+		//System.out.println("mostra a lista de funcionarios com nome começado por M e respectivo mail e ordenado:");
+		//nomes.forEach(System.out::println);//imprime a lista
 		
 		
 		Double soma = nomes.stream() 
@@ -94,7 +94,7 @@ public class Program {
 		
 		System.out.println("------------------------");
 		
-				System.out.println("a soma dos ordenados com os nomes começao por M: "+soma);// imprime o resultado
+				System.out.println("Sum of salary of people whose name starts with 'M': " +soma);// imprime o resultado
 		System.out.println("------------------------");			
 		//-------
 		} catch (IOException e) {
